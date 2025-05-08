@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Permasol</title>
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cal+Sans&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Host+Grotesk:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+        <style>
+            body{
+                margin: 0;
+                font-family:Montserrat ;
+                
+            }
+            .bar{
+                width: 100%;
+                height: 104px;
+                
+                
+                background-color: white;
+                
+                
+            }
+            .bar-content{
+                width: 70%;
+                margin: 0 auto;
+                
+                height: 100%;
+                display: flex;
+                justify-content: space-between;
+                
+            }
+            .company-name{
+                margin: 0;
+                margin-top: 20px;
+                
+                margin-left: 5px;
+                
+
+            }
+            .logo{
+                padding-bottom: 5px;
+                
+            }
+            .orange-dot{
+                height: 1em;
+                margin-top: 2px;
+                margin-left: -8px;
+            }
+            .social-media{
+                
+                display: flex;
+                flex-direction: column;
+                
+            }
+            .sm-icon{
+                width: 32px;
+                height: 32px;
+                
+                margin-left: 5px;
+                margin-right: 5px;
+            }
+            .icons{
+                display: flex;
+                margin-top: 20px;
+                margin-bottom: 5px;
+                
+            }
+            .email{
+                font-size: 12px;
+                text-align: center;
+            }
+            .phone-number{
+                font-size: 12px;
+                text-align: center;
+                
+            }
+            .logo-box{
+                display: flex;
+                flex-direction: column;
+                height: 100%;
+            }
+            .logo-complement{
+                
+                
+                margin-top: -8px;
+                font-size: 1rem;
+            }
+            .orange-banner{
+                width: 100%;
+                height: 30px;
+                background-color: #ef6d2d;
+                display: flex;
+                justify-content: center;
+                column-gap: 60px;
+                
+            }
+            .gray-banner{
+                width: 100%;
+                height: 25px;
+                background-color: #032b60;
+                
+            }
+            .banner-link{
+                
+                margin-top: 2px;
+                
+                color: white;
+                
+                
+            }
+            .slogan{
+                color: white;
+                text-align: center;
+                
+                font-size: 14px;
+                padding-top: 2px;
+            }
+            .main-banner {
+                
+                width: 100%;
+                height: 75vh;
+                background-image: url(images/mainbannerimage2.jpg);
+                background-size: 100%;
+                background-position: center;
+                
+                background-repeat: no-repeat;
+                
+            }
+            
+            .mision{
+                
+                width: 100%;
+                background-color: #032b60;
+                margin-bottom: 50px;
+                
+            }
+            .mision-text{
+                text-align: center;
+                width: 50%;
+                
+                color: white;
+                margin: 0 auto;
+                padding-top: 50px;
+                padding-bottom: 50px;
+                font-size: 18px;
+            }
+            h1{
+                margin-left: 50px;
+                
+                
+            }
+            .container{
+                
+                width: 100%;
+                
+                display: flex;
+                flex-wrap: wrap;
+                font-size: 1em;
+                justify-content: center;
+                gap: 40px;
+                row-gap: 50px;
+                margin-bottom: 50px;
+                margin-top: 50px;
+                
+
+            }
+            .tarjeta{
+                
+                width: 368px;
+                display: flex;
+                flex-direction: column;
+                
+            }
+
+            .name{
+                margin-bottom: 10px;
+                width: 100%;
+                font-weight: 700;
+                font-size: 22px;
+                
+            }
+            .image{
+                width: 100%;
+                margin-bottom: 10px;
+                height: 220px;
+                
+            }
+            .actual-image{
+                width: 100%;
+                border-radius: 15px;
+                height: 100%;
+                
+            }
+            .description{
+                width: 100%;
+                
+                
+            }
+            footer{
+                
+                width: 100%;
+                background-color: #032b60;
+                display: flex;
+                justify-content: center;
+                flex-wrap: wrap;
+            }
+            
+            .footer-box{
+                width: 350px;
+                height: 100%;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                color: white;
+                background-color: #032b60;
+                padding-top: 50px;
+                padding-bottom: 45px;
+                
+            }
+            .footericon{
+                width: 48px;
+                background-color: #ef6d2d;
+                border-radius: 50%;
+                padding: 8px;
+            }
+            .logo-image{
+                width: 250px;
+            }
+            .form-container{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                gap: 20px;
+                
+
+            }
+            .form-div{
+               margin-bottom: 50px;
+            }
+            .form-title{
+                font-size: 40px;
+                margin-bottom: 5px;
+            }
+            .contact-inputs{
+                width: 650px;
+                height: 50px;
+                border: 1px solid black;
+                outline: none;
+                padding-left: 25px;
+                font-weight: 500;
+                border-radius: 50px;
+                
+                color: black;
+                
+            }
+            .text-area-contact{
+                height: 140px;
+                padding-top: 15px;
+                border-radius: 20px;
+                border: none;
+                outline: none;
+                width: 650px;
+                padding-left: 25px;
+                border: 1px solid black;
+            }
+            .contact-inputs:focus{
+                border: 2px solid dodgerblue;
+            }
+            .text-area-contact:focus{
+                border: 2px solid dodgerblue;
+            }
+            .form-button{
+                display: flex;
+                align-items: center;
+                padding: 15px 30px;
+                font-size: 16px;
+                background-color: black;
+                color: whitesmoke;
+                gap: 10px;
+                border: none;
+                border-radius: 50px;
+                cursor: pointer;
+            }
+            .steps{
+                display: flex;
+                background-color: #ef6d2d;
+                color: white;
+                justify-content: center;
+                flex-wrap: wrap;
+            }
+            .step-component{
+                width: 250px;
+                margin-bottom: 5px;
+                
+                
+            }
+            .step-container{
+                margin-top: 20px;
+                width: 250px;
+                display: flex;
+                flex-direction: column;
+                gap: 15px;
+                text-align: center;
+                margin-left: 15px;
+                margin-right: 15px;
+                margin-bottom: 20px;
+            }
+            .step-icon{
+                width: 75px;
+                background-color: rgb(255, 255, 255);
+                border-radius: 50%;
+                padding: 5px;
+            }
+            .step-name{
+                font-weight: 700;
+                
+            }
+            @media (max-width:800px) {
+                .contact-inputs{
+                    width: 80vw;
+                }
+                .text-area-contact{
+                    width: 80vw;
+                }
+            }
+            
+            @media (max-width:857px) {
+                .main-banner{
+                    height: 50vh;
+                }
+            }
+            @media (max-width:573px){
+                .main-banner{
+                    height: 300px;
+                }
+            }
+            @media (max-width:400px){
+                .tarjeta{
+                    width: 95%;
+                }
+            }
+            @media (max-width:600px){
+                .logo-image{
+                    width: 200px;
+                }
+                .logo-complement{
+                    font-size: 13px;
+                }
+                .sm-icon{
+                    display: none;
+                }
+                .phone-number{
+                    display: none;
+
+                }
+                .email{
+                    display: none;
+                }
+                .bar{
+                    height: 90px;
+                }
+            }
+            
+        </style>
+    </head>
+    <body>
+        <div class="bar">
+            <div class="bar-content">
+                <div class="logo-box">
+                    <div class="logo">
+                        <img class="logo-image" src="images/LOGO_PERMASOL-cropped.PNG" alt="">
+                </div>
+                <div class="logo-complement">
+                    Cortinas &#x2022; Shutters &#x2022; Permas
+                </div>
+                    </div>
+                    
+                    
+                <div class="social-media">
+                    <div class="icons">
+                    <a href="https://wa.me/50768582857"><img class="sm-icon" src="images/whatsapp-icon.png" alt=""></a>
+                    <img class="sm-icon" src="images/mail.png" alt="">
+                    <a href="https://www.instagram.com/permasol.rd"><img class="sm-icon" src="images/instagram.png" alt=""></a>
+                    </div>
+                    <div class="phone-number">
+                        Whatsapp 849-499-1041
+                    </div>
+                    <div class="email">ventas@permasolrd.com</div>
+                    
+                </div>
+                
+            </div> 
+        </div>
+        
+
+        <div class="orange-banner">
+           <!-- <div class="banner-link">
+                Inicio
+            </div>
+            <div class="banner-link">
+                Productos
+            </div>
+            <div class="banner-link">
+                Servicios
+            </div> -->
+        </div>
+        <div class="gray-banner">
+            <div class="slogan">Protecciones Solares A Tu Medida</div>
+        </div>
+       <div class="main-banner">
+        
+       </div>
+       <div class="mision">
+        <p class="mision-text">En Permasol transformamos espacios con soluciones elegantes y funcionales para ventanas y puertas. Nuestra misión es brindar confort, estilo y bienestar a través de persianas, cortinas y shutters de alta calidad, con un servicio personalizado que pone al cliente en el centro de todo lo que hacemos.</p>
+        
+       </div>
+
+       <h1>Nuestros Productos</h1>
+
+       <div class="container">
+        <div class="tarjeta">
+            <div class="image"><img class="actual-image" src="images/romanblindai.png" alt=""></div>
+            <div class="name">Roman Shades</div>
+            <div class="description">Las persianas romanas aportan elegancia y calidez. Combinan la estética de una cortina con la flexibilidad y comodidad de una persiana enrollable, lo que las convierte en la solución ideal para casi cualquier tipo de ventana. </div>
+        </div>
+        <div class="tarjeta">
+            <div class="image"><img class="actual-image" src="images/venecianasai.jpg" alt=""></div>
+            <div class="name">Venecianas</div>
+            <div class="description">Gracias a su diseño ajustable, permiten regular fácilmente la entrada de luz natural, creando ambientes cómodos y acogedores. Son ideales tanto para espacios residenciales como corporativos, destacando por su durabilidad, bajo mantenimiento y estética moderna.. Disponibles en madera, pvc y aluminio.</div>
+        </div>
+        <div class="tarjeta">
+            <div class="image"><img class="actual-image" src="images/7zebracanva.jpg" alt=""></div>
+            <div class="name">Cortinas Tipo Zebra</div>
+            <div class="description">Disfrute de la luz, la vista y la privacidad que desee con persianas enrollables zebra. Gracias a su tejido de doble capa con rayas transparentes y opacas, las persianas enrollables dobles crean un efecto impactante que se adapta perfectamente tanto a hogares como a oficinas.</div>
+        </div>
+        <div class="tarjeta">
+            <div class="image"><img class="actual-image" src="images/curtainsai.png" alt=""></div>
+            <div class="name">Cortinas de Tela</div>
+            <div class="description">Ideales tanto para hogares como para espacios comerciales, nuestras cortinas aportan calidez, modernidad y confort. Asesoramos a nuestros clientes para encontrar la solución perfecta según sus necesidades de diseño, iluminación y decoración interior.</div>
+        </div>
+        <div class="tarjeta">
+            <div class="image"><img class="actual-image" src="images/toldocanva.jpg" alt=""></div>
+            <div class="name">Toldos</div>
+            <div class="description">Fabricados con materiales resistentes a la intemperie y con tejidos de alta calidad, nuestros toldos no solo protegen contra el sol y la lluvia, sino que también contribuyen al ahorro energético y a la mejora del ambiente exterior. Brindamos soluciones personalizadas que combinan funcionalidad, estética y durabilidad.</div>
+        </div>
+        <div class="tarjeta">
+            <div class="image"><img class="actual-image" src="images/rollersai.png" alt=""></div>
+            <div class="name">Cortinas Roller</div>
+            <div class="description">Con sus infinitas posibilidades de estilo y funcionalidad, las persianas enrollables son el producto de protección solar más popular del mundo. Su simplicidad las convierte en la solución perfecta tanto para hogares como para oficinas.</div>
+        </div>
+        <div class="tarjeta">
+            <div class="image"><img class="actual-image" src="images/shutterfinal.jpg" alt=""></div>
+            <div class="name">Shutters</div>
+            <div class="description">Los shutters son una solución elegante para el control de la luz, privacidad y seguridad. Ofrecemos asesoramiento personalizado para garantizar que cada proyecto cumpla con las más altas expectativas en diseño y funcionalidad.</div>
+        </div>
+
+        
+        
+        
+        
+        
+        
+        
+    </div>
+    <div  class="steps">
+        <div class="step-container">
+            <div class="step-component"><img class="step-icon" src="images/superslim.png" alt=""></div>
+            <div class="step-name">Contáctenos</div>
+            <div class="step-component">Envienos su mensaje por whatsapp o via email y le asesoraremos</div>
+        </div>
+        <div class="step-container">
+            <div class="step-component"><img class="step-icon" src="images/measure-slim.png" alt=""></div>
+            <div class="step-name" >Cotize con nosotros!</div>
+            <div class="step-component">Agende su cita para asesorarle con la medidas del area que desea cotizar.</div>
+        </div>
+        <div class="step-container">
+            <div class="step-component" ><img class="step-icon" src="images/gear-slim.png" alt=""></div>
+            <div class="step-name">Fabricación</div>
+            <div class="step-component">Trabajamos su pedido en el menor tiempo posible. </div>
+        </div>
+        <div class="step-container">
+            <div class="step-component" ><img class="step-icon" src="images/nail-slim.png" alt=""></div>
+            <div class="step-name">Instalación</div>
+            <div class="step-component">Nuestros instaladores especializados realizaran su intalacion con profesionalismo cuidando cada detalle.</div>
+        </div>
+        
+        
+        
+       </div>
+
+    <div class="form-div">
+        <form  action="https://api.web3forms.com/submit" method="POST" class="form-container">
+            <div class="title">
+                <h2 class="form-title">Contáctenos</h2>
+            </div>
+            
+            <input type="hidden" name="access_key" value="1a9c5ab8-605e-4cab-88f7-c20f3fcb0258">
+            <input type="text" name="name" placeholder="Tu Nombre" class="contact-inputs">
+            <input type="email" name="email" placeholder="Tu Correo" class="contact-inputs">
+            <textarea class="text-area-contact" name="message" placeholder="Tu Mensaje" class="contact-inputs"></textarea>
+            <button class="form-button" type="submit">Submit</button>
+        </form>
+    </div>
+    
+
+
+    <footer>
+        <div class="footer-box"> <img class="footericon" src="images/whatsapp-128.png" alt=""> <h3>849-499-1041</h3></div>
+        <div class="footer-box"><img class="footericon" src="images/whitest.png" alt=""> <h3>ventas@permasolrd.com</h3></div>
+        <div class="footer-box"><a href="https://www.instagram.com/permasol.rd"><img class="footericon" src="images/white-instagram.png" alt=""></a><h3>@permasol.rd</h3></div>
+    </footer>
+       
+    </body>
+</html>
