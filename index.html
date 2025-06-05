@@ -247,7 +247,100 @@
                 padding: 8px;
             }
             
+            .h1banner{
+                width: 100%;
+                height: 42vh;
+                position: relative;
+            }
+            .bannerbackground{
+                width: 100%;
                 
+            }
+            h1{
+                color: whitesmoke;
+            }
+            .bannertext{
+                position: absolute;
+                text-align: center;
+                top: 30px;
+            }
+            .b1{
+                background-color: whitesmoke;
+                border: none;
+                padding: 8px;
+                font-weight: 700;
+                margin-top: 130px;
+                
+                color: rgb(30, 30, 30);
+            }
+            .bluebanner{
+                background-color:  #032b60;
+                color: whitesmoke;
+                padding-top: 10px;
+                padding-bottom: 10px;
+                text-align: center;
+                width: 100%;
+            }
+            .bluebanner p {
+                margin: 0;
+            }
+            .homebar{
+                display: flex;
+                margin-top: 10px;
+                margin-bottom: 18px;
+                justify-content: space-evenly;
+            }
+            .smicon{
+                width: 32px;
+                height: 32px;
+                margin-top: 18px;
+            }
+            .micons{
+                display: flex;
+                gap: 10px;
+                
+            }
+            .permasollogo{
+                display: flex;
+                width: 200px;
+                margin-left: 15px;
+            }
+            .pl-image{
+                width: 100%;
+            }
+            .aboutbanner{
+                display: flex;
+                flex-direction: column;
+                margin-top: 25px;
+            }
+            .ab-illustration{
+                width: 90%;
+                margin: 0 auto;
+            }
+            .abi-image{
+                width: 100%;
+            }
+            .ab-title{
+                width: 90%;
+                margin: 0 auto;
+            }
+            .ab-title h2{
+                text-align: start;
+                margin: 0;
+                margin-top: 15px;
+                margin-bottom: 5px;
+            }
+            .ab-info{
+                width: 90%;
+                margin: 0 auto;
+            }
+            .ab-info p{
+                text-align: start;
+                margin: 0;
+                margin-top: 15px;
+                margin-bottom: 5px;
+                
+            }
             
             @media (max-width:960px){
                 .products-grid-content{
@@ -280,10 +373,57 @@
                     margin-top: 30px;
                 }
             }
+            @media (min-width:430px){
+                .mobileversionheader{
+                    display: none;
+                }
+            }
+            @media (max-width:430px){
+                .desktopversion{
+                    display: none;
+                }
+            }
         </style>
     </head>
     <body>
-        <div class="home-bar">
+        <div class="mobileversionheader">
+            <div class="homebar">
+            <div class="permasol-logo"><img class="pl-image" src="images/LOGO_PERMASOL-cropped.PNG" alt=""></div>
+            <div class="icons">
+                <a href="https://wa.me/18494991041"><img class="sm-icon" src="images/superslim.png" alt=""></a>
+                <img class="sm-icon" src="images/mail.png" alt="">
+                <a href="https://www.instagram.com/permasol.rd"><img class="sm-icon" src="images/instagram.png" alt=""></a>
+                </div>
+        </div>
+        <div class="bluebanner">
+            <p>PERMAS &#183; CORTINAS &#183; ROLLERS &#183; BLACKOUTS Y MAS </p>
+        </div>
+        <div class="h1banner">
+            <img class="bannerbackground" src="images/hb-banner-img.jpg" alt="">
+            <div class="bannertext">
+                <h1>Protecciones Solares A tu Medida</h1>
+                <a href="https://wa.me/18494991041"><button class="b1">CONTACTENOS</button></a>
+            </div>
+        </div>
+        <div class="aboutbanner">
+            <div class="ab-illustration">
+                <img class="abi-image" src="images/b.jpg" alt="">
+            </div>
+            <div class="ab-title">
+                <h2>Por que Permasol?</h2>
+            </div>
+            <div class="ab-info">
+                <p>
+                    Nos especializamos en la fabricación a medida de cortinas, rollers, permas, toldos, blackouts y demas protecciones solares, brindando confort, estética y funcionalidad a su espacio.
+                </p>
+                <p>
+                    Nuestra propuesta se basa en el trabajo a medida, una atención personalizada y un firme compromiso con ofrecer productos de alta calidad y resistencia que aseguran durabilidad, confort y proteccion. 
+                </p>
+            </div>
+        </div>
+        </div>
+        <div class="desktopversion">
+            <div class="home-bar">
             <div><img class="permasol-logo" src="images/LOGO_PERMASOL-cropped.PNG" alt=""></div>
             <div class="social-media">
                 <div class="icons">
@@ -304,6 +444,8 @@
         <div class="carousel">
 
         </div>
+        </div>
+        
         <div class="products-div">
             <div class="products-grid-content">
                 <div class="products-grid-title">
