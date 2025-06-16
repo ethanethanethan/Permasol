@@ -1,0 +1,502 @@
+<!DOCTYPE html> 
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <title>Cortinas Enrollables Dobles| Punta Cana</title>
+        <meta name="description" itemprop="description" content="Cortinas enrollables dobles tipo zebra en Punta Cana. Control de luz y privacidad en un solo diseño. Elegancia, funcionalidad y fabricación a medida.">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Savate:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Savate:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="hamburguer.css">
+        <style>
+              body{
+                margin: 0;
+                margin-top: 8px;
+            }
+            .header-icon{
+                width: 35px;
+                object-fit: contain;
+            }
+            .brand-logo{
+                width: 225px;
+
+            }
+            .container{
+                display: flex;
+                justify-content: space-evenly;
+                margin-bottom: 16px;
+            }
+            .piece{
+                display: flex;
+                align-items: center;
+            }
+            .piece p{
+                margin: 0;
+                color: black;
+                
+            }
+            .piece a{
+                text-decoration: none;
+                
+            }
+
+            #socialmediaicons{
+                gap: 15px;
+            }
+            #headerlinks{
+                gap: 35px;
+                font-family: Montserrat;
+                font-weight: 400;
+                
+            }
+            .homebanner{
+                background-image: url(images/doublerollerwrapper.jpg);
+                height: 600px;
+                background-repeat: no-repeat;
+                background-size:cover;
+                background-position: center;
+                display: flex;
+                flex-direction: column;
+                margin-bottom: 16px;
+                
+            }
+            .bluebanner{
+                width: 100%;
+                background-color: rgb(3, 43, 96); 
+                padding-top: 10px;
+                padding-bottom: 10px;
+                text-align: center;
+            }
+            .bluebanner p{
+                margin: 0;
+                color: whitesmoke;
+                font-family: Savate;
+                font-weight: 400;
+            }
+            .homebannertitle{
+                width: 50%;
+                height: 25%;
+                
+                margin: 0 auto;
+                margin-top: 40px;
+                display: flex;
+                
+            }
+            .homebannercta{
+                margin: 0 auto;
+                display: flex;
+                margin-top: 300px;
+            }
+            .homebannercta button{
+                padding: 15px;
+                background-color: whitesmoke;
+                border: none;
+                box-shadow: 1px 1px 3px whitesmoke;
+                font-family: Savate;
+                font-weight: 400;
+                font-size: 16px;
+            }
+            h1{
+                margin: 0;
+                color: rgb(255, 255, 255);
+                text-align: center;
+                font-size: 50px;
+                font-family:Montserrat ;
+                font-weight: 600;
+                
+                
+            }
+            .steps{
+                display: flex;
+                font-family: Montserrat;
+                color: black;
+                justify-content: center;
+                flex-wrap: wrap;
+                padding-bottom: 20px;
+            }
+            .step-component{
+                width: 250px;
+               
+            }
+            .step-container{
+                margin-top: 20px;
+                width: 250px;
+                display: flex;
+                flex-direction: column;
+                gap: 15px;
+                text-align: center;
+                margin-left: 15px;
+                margin-right: 15px;
+                
+            }
+            .step-icon{
+                width: 60px;
+                background-color: #ef6d2d;
+                border-radius: 50%;
+                padding: 5px;
+            }
+            .step-name{
+                font-weight: 700;
+            }
+            .article-container{
+                display: flex;
+                width: 100%;
+                font-family: Montserrat;
+                
+                
+            }
+            .article-illustrationbox{
+                width: 50%;
+                padding: 15px;
+            }
+            .article-image{
+                width: 100%;
+            }
+            .article-informationbox{
+                width: 50%;
+                padding: 15px;
+                
+            }
+            .article-informationbox h2{
+                margin: 0;
+            }
+            .article-informationbox p{
+                margin-bottom: 32px;
+                text-align: justify;
+            }
+           .form-container{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                gap: 20px;
+                
+
+            }
+            .form-div{
+               background-color: white;
+               padding-top: 30px;
+               padding-bottom: 40px;
+            }
+            .form-title{
+                font-size: 40px;
+                margin-bottom: 5px;
+            }
+            .contact-inputs{
+                width: 650px;
+                height: 50px;
+                border: 1px solid black;
+                outline: none;
+                padding-left: 25px;
+                font-weight: 500;
+                border-radius: 50px;
+                
+                color: black;
+                
+            }
+            .text-area-contact{
+                height: 140px;
+                padding-top: 15px;
+                border-radius: 20px;
+                border: none;
+                outline: none;
+                width: 650px;
+                padding-left: 25px;
+                border: 1px solid black;
+            }
+            .contact-inputs:focus{
+                border: 2px solid dodgerblue;
+            }
+            .text-area-contact:focus{
+                border: 2px solid dodgerblue;
+            }
+            .form-button{
+                display: flex;
+                align-items: center;
+                padding: 15px 30px;
+                font-size: 16px;
+                background-color: black;
+                color: whitesmoke;
+                gap: 10px;
+                border: none;
+                border-radius: 50px;
+                cursor: pointer;
+            }
+            footer{
+                
+                width: 100%;
+                background-color: #032b60;
+                display: flex;
+                justify-content: center;
+                flex-wrap: wrap;
+            }
+            
+            .footer-box{
+                width: 350px;
+                height: 100%;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                color: white;
+                background-color: #032b60;
+                padding-top: 50px;
+                padding-bottom: 45px;
+                
+            }
+            .footericon{
+                width: 48px;
+                background-color: #ef6d2d;
+                border-radius: 50%;
+                padding: 8px;
+            }
+            
+            @media (max-width:1100px){
+                .p3{
+                    display: none;
+                }
+
+            }
+            @media (max-width:954px){
+                .p2{
+                    display: none;
+                }
+
+            }
+            @media (max-width:700px){
+                .article-container{
+                    flex-direction: column;
+                    gap: 15px;
+                }
+                #infobox2{
+                    flex-direction: column-reverse;
+                }
+                .article-illustrationbox{
+                    width: 100%;
+                    padding: 0;
+                    display: flex;
+                    justify-content: center;
+                }
+                .article-informationbox{
+                    width: 85%;
+                    margin: 0 auto;
+                    padding: 0;
+                    
+                    
+                }
+                .article-image{
+                    
+                    width: 85%;
+                }
+            }   
+            @media (max-width:600px){
+                h1{
+                    font-size: 40px;
+                }
+                .homebannertitle{
+                    width: 80%;
+                }
+                .brand-logo{
+                    width: 185px;
+                }
+                .header-icon{
+                    width: 30px;
+                }
+                .bluebanner p{
+                margin: 0;
+                color: whitesmoke;
+                font-family: Savate;
+                font-weight: 400;
+                font-size: 14px;
+            }
+            #socialmediaicons{
+                display: none;
+            }
+
+
+            }
+
+            @media (min-width:1280px){
+                .article-container{
+                    width: 1280px;
+                    margin: 0 auto;
+                }
+        
+
+            }
+             @media (max-width:800px) {
+                .contact-inputs{
+                    width: 80vw;
+                }
+                .text-area-contact{
+                    width: 80vw;
+                }
+            }
+            
+        </style>
+    </head>
+    <body>
+        <label class="hamburger-menu">
+      <input type="checkbox" />
+    </label>
+    <aside class="sidebar">
+      <nav>
+        <div class="home-link"><a href="index.html">Inicio</a></div>
+        <div class="product-link"><a href="Rollers.html">Rollers</a></div>
+        <div class="product-link"><a href="Cortinas.html">Cortinas</a></div>
+        <div class="product-link"><a href="Romanshades.html">Roman Shades</a></div>
+        <div class="product-link"><a href="DoubleRollers.html">Zebras</a></div>
+        
+      </nav>
+    </aside>
+        <div class="container">
+            <div class="piece">
+                <img class="brand-logo" src="images/LOGO_PERMASOL-cropped.PNG" alt="">
+            </div>
+            <!--<div id="headerlinks" class="piece">
+                <a href=""><p>Inicio</p></a>
+                <a href=""><p>Contacto</p></a>
+                <a href=""><p>Productos</p></a>
+            </div> -->
+            <div id="socialmediaicons" class="piece">
+                <a href="https://www.instagram.com/permasol.rd"><img class="header-icon" src="images/instagram-icon.png" alt=""></a>
+                <a href="mailto:ventas@permasolrd.com"><img class="header-icon" src="images/email-icon.png" alt=""></a>
+                <a href="https://wa.me/18494991041"><img class="header-icon" src="images/whatsapp-icon.png" alt=""></a>
+            </div>
+                
+        
+        
+        </div>
+        <div class="bluebanner">
+            <p>PERMAS &#183; CORTINAS &#183; ROLLERS &#183; BLACKOUTS Y MAS</p>
+        </div>
+        <div class="homebanner">
+            <div class="homebannertitle">
+                <h1>Cortinas Enrollables Dobles Tipo Zebra</h1>
+            </div>
+            <div class="homebannercta">
+                <a href="https://wa.me/18494991041"><button>Contactenos</button></a>
+            </div>
+        </div>
+
+        
+
+        <div class="article-container">
+
+            <div class="article-illustrationbox">
+                <img class="article-image" src="images/doublerollergmny.png" alt="">
+            </div>
+
+            <div class="article-informationbox">
+                <h2> Cortinas Zebra a Medida en Punta Cana</h2>
+                <p>
+                    Las cortinas enrollables dobles tipo zebra ofrecen un diseño innovador que combina elegancia y funcionalidad. Gracias a sus franjas alternadas de tela traslúcida y opaca, permiten controlar fácilmente la entrada de luz natural, logrando un ambiente cómodo y visualmente atractivo.
+
+                </p>
+                <p class="p2">
+                   En Permasol fabricamos e instalamos cortinas zebra en Punta Cana totalmente a medida. Nos adaptamos al estilo de tu espacio y a las dimensiones de cada ventana, asegurando un acabado limpio, profesional y de alta calidad, ideal para hogares, oficinas o apartamentos turísticos.
+                </p>
+
+                <p class="p3">
+                    Las cortinas tipo zebra tienen un diseño contemporáneo que se integra armoniosamente a estilos modernos o minimalistas. Su funcionamiento mediante cadena y su sistema de enrollado compacto las hacen discretas, funcionales y estéticamente sofisticadas.
+                </p>
+            </div>
+        </div>
+
+
+        <div id="infobox2" class="article-container">
+
+            
+
+            <div  class="article-informationbox">
+                <h2> Ideal para Ambientes con Mucha Luz Natural</h2>
+                <p>
+                    Este tipo de cortina es perfecto para espacios con gran exposición solar como salas, comedores, estudios u oficinas. Las cortinas zebra enrollables permiten regular la luz sin necesidad de levantarlas completamente, brindando un equilibrio perfecto entre visibilidad exterior y privacidad.
+                </p>
+                <p class="p2">
+                    Una de las mayores ventajas de las cortinas enrollables zebra es que actúan como dos cortinas en una: permiten filtrar la luz como una traslúcida y bloquearla como una blackout, gracias al alineamiento de las franjas. Esta versatilidad las hace ideales para cualquier hora del día.
+                </p>
+
+                <p class="p3">
+                    Las telas utilizadas en nuestras cortinas dobles tipo zebra son de fácil limpieza y están fabricadas para soportar las condiciones del Caribe. Su sistema de enrollado también es duradero, lo que garantiza un uso prolongado sin perder funcionalidad ni estética.
+
+                </p>
+            </div>
+
+            <div class="article-illustrationbox">
+                <img class="article-image" src="images/doublerollerbath.png" alt="">
+            </div>
+        </div>
+
+
+        <div class="article-container">
+
+            <div class="article-illustrationbox">
+                <img class="article-image" src="images/doublerollerdog.png" alt="">
+            </div>
+
+            <div class="article-informationbox">
+                <h2> Instalación Profesional en Toda la Zona Este</h2>
+                <p>
+                    Disponibles en una amplia gama de colores neutros, texturas y niveles de opacidad, las cortinas dobles enrollables se pueden personalizar según el ambiente y la función. Ofrecemos telas de calidad resistentes al sol, ideales para el clima tropical de Punta Cana.
+                </p>
+                <p class="p2">
+                    Las cortinas enrollables zebra en Punta Cana son una excelente opción para decoradores, arquitectos y desarrolladores inmobiliarios que buscan un producto moderno, versátil y práctico para sus proyectos. Aportan valor estético y funcional a cualquier espacio.
+                </p>
+
+                <p class="p3">
+                    Ofrecemos servicio de instalación profesional de cortinas tipo zebra en Punta Cana, Bávaro, Cap Cana y zonas cercanas. Nuestro equipo se encarga de la medición, confección e instalación con precisión, garantizando un resultado perfecto desde el primer momento.
+                </p>
+            </div>
+        </div>
+
+        <div  class="steps">
+            <div class="step-container">
+                <div class="step-component"><img class="step-icon" src="images/whitewhatsapp.png" alt=""></div>
+                <div class="step-name">Contáctenos.</div>
+                <div class="step-component">Envienos su mensaje por whatsapp o via email y le asesoraremos</div>
+            </div>
+            <div class="step-container">
+                <div class="step-component"><img class="step-icon" src="images/measureicon.png" alt=""></div>
+                <div class="step-name" >Cotize con nosotros!</div>
+                <div class="step-component">Agende su cita para asesorarle con la medidas del area que desea cotizar.</div>
+            </div>
+            <div class="step-container">
+                <div class="step-component" ><img class="step-icon" src="images/gearicon.png" alt=""></div>
+                <div class="step-name">Fabricación</div>
+                <div class="step-component">Trabajamos su pedido en el menor tiempo posible. </div>
+            </div>
+            <div class="step-container">
+                <div class="step-component" ><img class="step-icon" src="images/screwswhite.png" alt=""></div>
+                <div class="step-name">Instalación</div>
+                <div class="step-component">Realizaremos su intalacion con profesionalismo cuidando cada detalle.</div>
+            </div>
+            
+            
+            
+           </div>
+
+           <div class="form-div">
+            <form  action="https://api.web3forms.com/submit" method="POST" class="form-container">
+                <div class="title">
+                    <h2 class="form-title">Contáctenos</h2>
+                </div>
+                
+                <input type="hidden" name="access_key" value="1a9c5ab8-605e-4cab-88f7-c20f3fcb0258">
+                <input type="text" name="name" placeholder="Tu Nombre" class="contact-inputs">
+                <input type="email" name="email" placeholder="Tu Correo" class="contact-inputs">
+                <textarea class="text-area-contact" name="message" placeholder="Tu Mensaje" class="contact-inputs"></textarea>
+                <button class="form-button" type="submit">Submit</button>
+            </form>
+        </div>
+        <footer>
+            <div class="footer-box"><a href="https://wa.me/18494991041"><img class="footericon" src="images/whatsappfooter.png" alt=""></a> <h3>(849) 499-1041</h3></div>
+            <div class="footer-box"><img class="footericon" src="images/mailfooter.png" alt=""> <h3>ventas@permasolrd.com</h3></div>
+            <div class="footer-box"><a href="https://www.instagram.com/permasol.rd"><img class="footericon" src="images/instagramfooter.png" alt=""></a><h3>@permasol.rd</h3></div>
+        </footer>
+    </body>
+</html>

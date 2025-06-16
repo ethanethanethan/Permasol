@@ -1,0 +1,503 @@
+<!DOCTYPE html> 
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <title>Cortinas Enrollables | Blackout Rollers</title>
+        <meta name="description" itemprop="description" content="Cortinas enrollables a medida en Punta Cana. Diseño moderno, control de luz, blackout o screen, instalación profesional y telas personalizadas.">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Savate:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Savate:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="hamburguer.css">
+        <style>
+              body{
+                margin: 0;
+                margin-top: 8px;
+            }
+            .header-icon{
+                width: 35px;
+                object-fit: contain;
+            }
+            .brand-logo{
+                width: 225px;
+
+            }
+            .container{
+                display: flex;
+                justify-content: space-evenly;
+                margin-bottom: 16px;
+            }
+            .piece{
+                display: flex;
+                align-items: center;
+            }
+            .piece p{
+                margin: 0;
+                color: black;
+                
+            }
+            .piece a{
+                text-decoration: none;
+                
+            }
+
+            #socialmediaicons{
+                gap: 15px;
+            }
+            #headerlinks{
+                gap: 35px;
+                font-family: Montserrat;
+                font-weight: 400;
+                
+            }
+            .homebanner{
+                background-image: url(images/Blinds-Mart-slide-4.jpg);
+                height: 600px;
+                background-repeat: no-repeat;
+                background-size:cover;
+                background-position: center;
+                display: flex;
+                flex-direction: column;
+                margin-bottom: 16px;
+                
+            }
+            .bluebanner{
+                width: 100%;
+                background-color: rgb(3, 43, 96); 
+                padding-top: 10px;
+                padding-bottom: 10px;
+                text-align: center;
+            }
+            .bluebanner p{
+                margin: 0;
+                color: whitesmoke;
+                font-family: Savate;
+                font-weight: 400;
+            }
+            .homebannertitle{
+                width: 50%;
+                height: 25%;
+                
+                margin: 0 auto;
+                margin-top: 40px;
+                display: flex;
+                
+            }
+            .homebannercta{
+                margin: 0 auto;
+                display: flex;
+                margin-top: 300px;
+            }
+            .homebannercta button{
+                padding: 15px;
+                background-color: whitesmoke;
+                border: none;
+                box-shadow: 1px 1px 3px whitesmoke;
+                font-family: Savate;
+                font-weight: 400;
+                font-size: 16px;
+            }
+            h1{
+                margin: 0;
+                color: whitesmoke;
+                text-align: center;
+                font-size: 50px;
+                font-family:Montserrat ;
+                font-weight: 600;
+            }
+            .steps{
+                display: flex;
+                font-family: Montserrat;
+                color: black;
+                justify-content: center;
+                flex-wrap: wrap;
+                padding-bottom: 20px;
+            }
+            .step-component{
+                width: 250px;
+               
+            }
+            .step-container{
+                margin-top: 20px;
+                width: 250px;
+                display: flex;
+                flex-direction: column;
+                gap: 15px;
+                text-align: center;
+                margin-left: 15px;
+                margin-right: 15px;
+                
+            }
+            .step-icon{
+                width: 60px;
+                background-color: #ef6d2d;
+                border-radius: 50%;
+                padding: 5px;
+            }
+            .step-name{
+                font-weight: 700;
+            }
+            .article-container{
+                display: flex;
+                width: 100%;
+                font-family: Montserrat;
+                
+                
+            }
+            .article-illustrationbox{
+                width: 50%;
+                padding: 15px;
+            }
+            .article-image{
+                width: 100%;
+            }
+            .article-informationbox{
+                width: 50%;
+                padding: 15px;
+                
+            }
+            .article-informationbox h2{
+                margin: 0;
+            }
+            .article-informationbox p{
+                margin-bottom: 32px;
+                text-align: justify;
+            }
+           .form-container{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                gap: 20px;
+                
+
+            }
+            .form-div{
+               background-color: white;
+               padding-top: 30px;
+               padding-bottom: 40px;
+            }
+            .form-title{
+                font-size: 40px;
+                margin-bottom: 5px;
+            }
+            .contact-inputs{
+                width: 650px;
+                height: 50px;
+                border: 1px solid black;
+                outline: none;
+                padding-left: 25px;
+                font-weight: 500;
+                border-radius: 50px;
+                
+                color: black;
+                
+            }
+            .text-area-contact{
+                height: 140px;
+                padding-top: 15px;
+                border-radius: 20px;
+                border: none;
+                outline: none;
+                width: 650px;
+                padding-left: 25px;
+                border: 1px solid black;
+            }
+            .contact-inputs:focus{
+                border: 2px solid dodgerblue;
+            }
+            .text-area-contact:focus{
+                border: 2px solid dodgerblue;
+            }
+            .form-button{
+                display: flex;
+                align-items: center;
+                padding: 15px 30px;
+                font-size: 16px;
+                background-color: black;
+                color: whitesmoke;
+                gap: 10px;
+                border: none;
+                border-radius: 50px;
+                cursor: pointer;
+            }
+            footer{
+                
+                width: 100%;
+                background-color: #032b60;
+                display: flex;
+                justify-content: center;
+                flex-wrap: wrap;
+            }
+            
+            .footer-box{
+                width: 350px;
+                height: 100%;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                color: white;
+                background-color: #032b60;
+                padding-top: 50px;
+                padding-bottom: 45px;
+                
+            }
+            .footericon{
+                width: 48px;
+                background-color: #ef6d2d;
+                border-radius: 50%;
+                padding: 8px;
+            }
+            
+            @media (max-width:1100px){
+                .p3{
+                    display: none;
+                }
+
+            }
+            @media (max-width:954px){
+                .p2{
+                    display: none;
+                }
+
+            }
+            @media (max-width:700px){
+                .article-container{
+                    flex-direction: column;
+                    gap: 15px;
+                }
+                #infobox2{
+                    flex-direction: column-reverse;
+                }
+                .article-illustrationbox{
+                    width: 100%;
+                    padding: 0;
+                    display: flex;
+                    justify-content: center;
+                }
+                .article-informationbox{
+                    width: 85%;
+                    margin: 0 auto;
+                    padding: 0;
+                    
+                    
+                }
+                .article-image{
+                    
+                    width: 85%;
+                }
+            }   
+            @media (max-width:600px){
+                h1{
+                    font-size: 40px;
+                }
+                .homebannertitle{
+                    width: 80%;
+                }
+                .brand-logo{
+                    width: 185px;
+                }
+                .header-icon{
+                    width: 30px;
+                }
+                .bluebanner p{
+                margin: 0;
+                color: whitesmoke;
+                font-family: Savate;
+                font-weight: 400;
+                font-size: 14px;
+            }
+            #socialmediaicons{
+                display: none;
+            }
+
+
+            }
+
+            @media (min-width:1280px){
+                .article-container{
+                    width: 1280px;
+                    margin: 0 auto;
+                }
+        
+
+            }
+             @media (max-width:800px) {
+                .contact-inputs{
+                    width: 80vw;
+                }
+                .text-area-contact{
+                    width: 80vw;
+                }
+            }
+            
+        </style>
+    </head>
+    <body>
+        <label class="hamburger-menu">
+      <input type="checkbox" />
+    </label>
+    <aside class="sidebar">
+      <nav>
+        <div class="home-link"><a href="index.html">Inicio</a></div>
+        <div class="product-link"><a href="Rollers.html">Rollers</a></div>
+        <div class="product-link"><a href="Cortinas.html">Cortinas</a></div>
+        <div class="product-link"><a href="Romanshades.html">Roman Shades</a></div>
+        <div class="product-link"><a href="DoubleRollers.html">Zebras</a></div>
+        
+      </nav>
+    </aside>
+
+
+        <div class="container">
+            <div class="piece">
+                <img class="brand-logo" src="images/LOGO_PERMASOL-cropped.PNG" alt="">
+            </div>
+            <!--<div id="headerlinks" class="piece">
+                <a href=""><p>Inicio</p></a>
+                <a href=""><p>Contacto</p></a>
+                <a href=""><p>Productos</p></a>
+            </div> -->
+            <div id="socialmediaicons" class="piece">
+                <a href="https://www.instagram.com/permasol.rd"><img class="header-icon" src="images/instagram-icon.png" alt=""></a>
+                <a href="mailto:ventas@permasolrd.com"><img class="header-icon" src="images/email-icon.png" alt=""></a>
+                <a href="https://wa.me/18494991041"><img class="header-icon" src="images/whatsapp-icon.png" alt=""></a>
+            </div>
+            
+
+            
+                
+        
+        
+        </div>
+        <div class="bluebanner">
+            <p>PERMAS &#183; CORTINAS &#183; ROLLERS &#183; BLACKOUTS Y MAS</p>
+        </div>
+        <div class="homebanner">
+            <div class="homebannertitle">
+                <h1>Transforma tu espacio con Cortinas Enrollables</h1>
+            </div>
+            <div class="homebannercta">
+                <a href="https://wa.me/18494991041"><button>Contactenos</button></a>
+            </div>
+        </div>
+
+        
+
+        <div class="article-container">
+
+            <div class="article-illustrationbox">
+                <img class="article-image" src="images/rollerchain2.jpeg" alt="">
+            </div>
+
+            <div class="article-informationbox">
+                <h2> Cortinas Enrollables a Medida en Punta Cana</h2>
+                <p>
+                    Descubre nuestras cortinas enrollables a medida, la solución ideal para quienes buscan estilo y control de luz en hogares u oficinas. Diseñadas para adaptarse perfectamente a cualquier tipo de ventana, nuestras cortinas tipo roller ofrecen un acabado moderno, limpio y sofisticado que realza la decoración de tus espacios.
+                </p>
+                <p class="p2">
+                    Fabricadas con materiales de alta calidad, están disponibles en una amplia variedad de telas y pueden ser blackout o screen, ideales para controlar la luz natural, proteger del sol y mantener la privacidad sin sacrificar el estilo. Su sistema de accionamiento con cadena es suave, resistente y fácil de usar.
+                </p>
+
+                <p class="p3">
+                    Las cortinas enrollables en Punta Cana que ofrecemos son perfectas para residencias, oficinas, apartamentos turísticos y locales comerciales. Además, su mantenimiento es sencillo, lo que las convierte en una opción práctica y duradera.
+                </p>
+            </div>
+        </div>
+
+
+        <div id="infobox2" class="article-container">
+
+            
+
+            <div  class="article-informationbox">
+                <h2> Cortinas Enrollables Blackout</h2>
+                <p>
+                    Nuestras cortinas enrollables blackout son la opción ideal para quienes buscan máxima oscuridad, privacidad y protección solar. Diseñadas para bloquear el 100% de la luz exterior, estas cortinas son perfectas para dormitorios, oficinas o cualquier espacio donde el control de la luz sea esencial.
+                </p>
+                <p class="p2">
+                    Fabricadas a medida con materiales de alta calidad, las cortinas blackout tipo roller ofrecen un diseño elegante y moderno que se adapta a todo tipo de decoración. Gracias a su composición especial, también ayudan a reducir la temperatura interior y proteger los muebles de los rayos UV, mejorando la eficiencia energética del espacio.
+                </p>
+
+                <p class="p3">
+                    Instalamos cortinas blackout en Punta Cana, Bávaro y todo el Este del país, con opciones de operación manual o motorizada para mayor comodidad. Son fáciles de limpiar y están disponibles en varios colores y acabados.
+                </p>
+            </div>
+
+            <div class="article-illustrationbox">
+                <img class="article-image" src="images/blackoutroller2.jpeg" alt="">
+            </div>
+        </div>
+
+
+        <div class="article-container">
+
+            <div class="article-illustrationbox">
+                <img class="article-image" src="images/sunscreen.jpg" alt="">
+            </div>
+
+            <div class="article-informationbox">
+                <h2> Cortinas Enrollables Sunscreen</h2>
+                <p>
+                    Las cortinas enrollables Sunscreen son la solución perfecta para quienes desean disfrutar de la luz natural sin sacrificar la privacidad ni la protección solar. Este tipo de tela permite la entrada controlada de luz, reduce el deslumbramiento y bloquea los rayos UV, protegiendo tus muebles y pisos del deterioro solar.
+                </p>
+                <p class="p2">
+                    Ideales para oficinas, salas, comedores y espacios con vista al exterior, las cortinas screen tipo roller combinan diseño moderno con funcionalidad. Su tejido técnico permite ver hacia fuera sin que desde el exterior se vea claramente hacia adentro, ofreciendo confort visual y térmico.
+                </p>
+
+                <p class="p3">
+                    Disponibles en diferentes niveles de apertura, telas y texturas, nuestras cortinas enrollables screen en Punta Cana se fabrican a medida y se instalan con precisión para adaptarse a cualquier tipo de ventana.
+                </p>
+            </div>
+        </div>
+
+        <div  class="steps">
+            <div class="step-container">
+                <div class="step-component"><img class="step-icon" src="images/whitewhatsapp.png" alt=""></div>
+                <div class="step-name">Contáctenos.</div>
+                <div class="step-component">Envienos su mensaje por whatsapp o via email y le asesoraremos</div>
+            </div>
+            <div class="step-container">
+                <div class="step-component"><img class="step-icon" src="images/measureicon.png" alt=""></div>
+                <div class="step-name" >Cotize con nosotros!</div>
+                <div class="step-component">Agende su cita para asesorarle con la medidas del area que desea cotizar.</div>
+            </div>
+            <div class="step-container">
+                <div class="step-component" ><img class="step-icon" src="images/gearicon.png" alt=""></div>
+                <div class="step-name">Fabricación</div>
+                <div class="step-component">Trabajamos su pedido en el menor tiempo posible. </div>
+            </div>
+            <div class="step-container">
+                <div class="step-component" ><img class="step-icon" src="images/screwswhite.png" alt=""></div>
+                <div class="step-name">Instalación</div>
+                <div class="step-component">Realizaremos su intalacion con profesionalismo cuidando cada detalle.</div>
+            </div>
+            
+            
+            
+           </div>
+
+           <div class="form-div">
+            <form  action="https://api.web3forms.com/submit" method="POST" class="form-container">
+                <div class="title">
+                    <h2 class="form-title">Contáctenos</h2>
+                </div>
+                
+                <input type="hidden" name="access_key" value="1a9c5ab8-605e-4cab-88f7-c20f3fcb0258">
+                <input type="text" name="name" placeholder="Tu Nombre" class="contact-inputs">
+                <input type="email" name="email" placeholder="Tu Correo" class="contact-inputs">
+                <textarea class="text-area-contact" name="message" placeholder="Tu Mensaje" class="contact-inputs"></textarea>
+                <button class="form-button" type="submit">Submit</button>
+            </form>
+        </div>
+        <footer>
+            <div class="footer-box"><a href="https://wa.me/18494991041"><img class="footericon" src="images/whatsappfooter.png" alt=""></a> <h3>(849) 499-1041</h3></div>
+            <div class="footer-box"><img class="footericon" src="images/mailfooter.png" alt=""> <h3>ventas@permasolrd.com</h3></div>
+            <div class="footer-box"><a href="https://www.instagram.com/permasol.rd"><img class="footericon" src="images/instagramfooter.png" alt=""></a><h3>@permasol.rd</h3></div>
+        </footer>
+    </body>
+</html>
