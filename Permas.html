@@ -1,0 +1,507 @@
+<!DOCTYPE html> 
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <title>Perma de exterior | Punta Cana</title>
+        <meta name="description" itemprop="description" content="Perma tradicional de exterior en Punta Cana. Protección solar duradera, diseño funcional y estructura resistente para terrazas, patios y balcones.
+
+">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Savate:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Savate:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="hamburguer.css">
+        <style>
+              body{
+                margin: 0;
+                margin-top: 8px;
+            }
+            .header-icon{
+                width: 35px;
+                object-fit: contain;
+            }
+            .brand-logo{
+                width: 225px;
+
+            }
+            .container{
+                display: flex;
+                justify-content: space-evenly;
+                margin-bottom: 16px;
+            }
+            .piece{
+                display: flex;
+                align-items: center;
+            }
+            .piece p{
+                margin: 0;
+                color: black;
+                
+            }
+            .piece a{
+                text-decoration: none;
+                
+            }
+
+            #socialmediaicons{
+                gap: 15px;
+            }
+            #headerlinks{
+                gap: 35px;
+                font-family: Montserrat;
+                font-weight: 400;
+                
+            }
+            .homebanner{
+                background-image: url(images/hb-banner-img.jpg);
+                height: 600px;
+                background-repeat: no-repeat;
+                background-size:cover;
+                background-position: center;
+                display: flex;
+                flex-direction: column;
+                margin-bottom: 16px;
+                
+            }
+            .bluebanner{
+                width: 100%;
+                background-color: rgb(3, 43, 96); 
+                padding-top: 10px;
+                padding-bottom: 10px;
+                text-align: center;
+            }
+            .bluebanner p{
+                margin: 0;
+                color: whitesmoke;
+                font-family: Montserrat;
+                font-weight: 400;
+            }
+            .bluebanner a{
+                color: white;
+            }
+            .homebannertitle{
+                width: 50%;
+                height: 25%;
+                
+                margin: 0 auto;
+                margin-top: 40px;
+                display: flex;
+                
+            }
+            .homebannercta{
+                margin: 0 auto;
+                display: flex;
+                margin-top: 300px;
+            }
+            .homebannercta button{
+                padding: 15px;
+                background-color: whitesmoke;
+                border: none;
+                box-shadow: 1px 1px 3px whitesmoke;
+                font-family: Savate;
+                font-weight: 400;
+                font-size: 16px;
+            }
+            h1{
+                margin: 0;
+                color: whitesmoke;
+                text-align: center;
+                font-size: 50px;
+                font-family:Montserrat ;
+                font-weight: 600;
+            }
+            .steps{
+                display: flex;
+                font-family: Montserrat;
+                color: black;
+                justify-content: center;
+                flex-wrap: wrap;
+                padding-bottom: 20px;
+            }
+            .step-component{
+                width: 250px;
+               
+            }
+            .step-container{
+                margin-top: 20px;
+                width: 250px;
+                display: flex;
+                flex-direction: column;
+                gap: 15px;
+                text-align: center;
+                margin-left: 15px;
+                margin-right: 15px;
+                
+            }
+            .step-icon{
+                width: 60px;
+                background-color: #ef6d2d;
+                border-radius: 50%;
+                padding: 5px;
+            }
+            .step-name{
+                font-weight: 700;
+            }
+            .article-container{
+                display: flex;
+                width: 100%;
+                font-family: Montserrat;
+                
+                
+            }
+            .article-illustrationbox{
+                width: 50%;
+                padding: 15px;
+            }
+            .article-image{
+                width: 100%;
+            }
+            .article-informationbox{
+                width: 50%;
+                padding: 15px;
+                
+            }
+            .article-informationbox h2{
+                margin: 0;
+            }
+            .article-informationbox p{
+                margin-bottom: 32px;
+                text-align: justify;
+            }
+           .form-container{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                gap: 20px;
+                
+
+            }
+            .form-div{
+               background-color: white;
+               padding-top: 30px;
+               padding-bottom: 40px;
+            }
+            .form-title{
+                font-size: 40px;
+                margin-bottom: 5px;
+            }
+            .contact-inputs{
+                width: 650px;
+                height: 50px;
+                border: 1px solid black;
+                outline: none;
+                padding-left: 25px;
+                font-weight: 500;
+                border-radius: 50px;
+                
+                color: black;
+                
+            }
+            .text-area-contact{
+                height: 140px;
+                padding-top: 15px;
+                border-radius: 20px;
+                border: none;
+                outline: none;
+                width: 650px;
+                padding-left: 25px;
+                border: 1px solid black;
+            }
+            .contact-inputs:focus{
+                border: 2px solid dodgerblue;
+            }
+            .text-area-contact:focus{
+                border: 2px solid dodgerblue;
+            }
+            .form-button{
+                display: flex;
+                align-items: center;
+                padding: 15px 30px;
+                font-size: 16px;
+                background-color: black;
+                color: whitesmoke;
+                gap: 10px;
+                border: none;
+                border-radius: 50px;
+                cursor: pointer;
+            }
+            footer{
+                
+                width: 100%;
+                background-color: #032b60;
+                display: flex;
+                justify-content: center;
+                flex-wrap: wrap;
+            }
+            
+            .footer-box{
+                width: 350px;
+                height: 100%;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                color: white;
+                background-color: #032b60;
+                padding-top: 50px;
+                padding-bottom: 45px;
+                
+            }
+            .footericon{
+                width: 48px;
+                background-color: #ef6d2d;
+                border-radius: 50%;
+                padding: 8px;
+            }
+            .whatsapp-link a{
+                text-decoration: none;
+                color: white;
+                font-family: Montserrat;
+                
+            }
+            .whatsapp-link{
+                margin-top: 20px;
+            }
+            
+            @media (max-width:1100px){
+                .p3{
+                    display: none;
+                }
+
+            }
+            @media (max-width:954px){
+                .p2{
+                    display: none;
+                }
+
+            }
+            @media (max-width:700px){
+                .article-container{
+                    flex-direction: column;
+                    gap: 15px;
+                }
+                #infobox2{
+                    flex-direction: column-reverse;
+                }
+                .article-illustrationbox{
+                    width: 100%;
+                    padding: 0;
+                    display: flex;
+                    justify-content: center;
+                }
+                .article-informationbox{
+                    width: 85%;
+                    margin: 0 auto;
+                    padding: 0;
+                    
+                    
+                }
+                .article-image{
+                    
+                    width: 85%;
+                }
+            }   
+            @media (max-width:600px){
+                h1{
+                    font-size: 40px;
+                }
+                .homebannertitle{
+                    width: 80%;
+                }
+                .brand-logo{
+                    width: 185px;
+                }
+                .header-icon{
+                    width: 30px;
+                }
+                .bluebanner p{
+                margin: 0;
+                color: whitesmoke;
+                font-family: Savate;
+                font-weight: 400;
+                font-size: 14px;
+            }
+            #socialmediaicons{
+                display: none;
+            }
+
+
+            }
+
+            @media (min-width:1280px){
+                .article-container{
+                    width: 1280px;
+                    margin: 0 auto;
+                }
+        
+
+            }
+             @media (max-width:800px) {
+                .contact-inputs{
+                    width: 80vw;
+                }
+                .text-area-contact{
+                    width: 80vw;
+                }
+            }
+            
+        </style>
+    </head>
+    <body>
+        <label class="hamburger-menu">
+      <input type="checkbox" />
+    </label>
+    <aside class="sidebar">
+      <nav>
+        <div class="home-link"><a href="index.html">Inicio</a></div>
+        <div class="product-link"><a href="Permas.html">Permas</a></div>
+        <div class="product-link"><a href="Cortinas.html">Cortinas</a></div>
+        <div class="product-link"><a href="Rollers.html">Rollers</a></div>
+        <div class="product-link"><a href="Romanshades.html">Roman Shades</a></div>
+        <div class="product-link"><a href="DoubleRollers.html">Zebras</a></div>
+        <div class="whatsapp-link"><a href="https://wa.me/8494991041">Whatsapp</a></div>
+        
+        
+        
+        
+        
+        
+        
+        
+      </nav>
+    </aside>
+
+
+        <div class="container">
+            <div class="piece">
+                <img class="brand-logo" src="images/LOGO_PERMASOL-cropped.PNG" alt="">
+            </div>
+            <!--<div id="headerlinks" class="piece">
+                <a href=""><p>Inicio</p></a>
+                <a href=""><p>Contacto</p></a>
+                <a href=""><p>Productos</p></a>
+            </div> -->
+            <div id="socialmediaicons" class="piece">
+                <a href="https://www.instagram.com/permasol.rd"><img class="header-icon" src="images/instagram-icon.png" alt=""></a>
+                <a href="mailto:ventas@permasolrd.com"><img class="header-icon" src="images/email-icon.png" alt=""></a>
+                <a href="https://wa.me/18494991041"><img class="header-icon" src="images/whatsapp-icon.png" alt=""></a>
+            </div>
+            
+
+            
+                
+        
+        
+        </div>
+        <div class="bluebanner">
+            <p><a href="Permas.html">PERMAS</a> &#183; <a href="Cortinas.html">CORTINAS</a> &#183; <a href="Rollers.html">ROLLERS</a> &#183; BLACKOUTS Y MAS</p>
+        </div>
+        <div class="homebanner">
+            <div class="homebannertitle">
+                <h1>Perma Tradicional de Exterior</h1>
+            </div>
+            <div class="homebannercta">
+                <a href="https://wa.me/18494991041"><button>Contactenos</button></a>
+            </div>
+        </div>
+
+        
+
+        <div class="article-container">
+
+            <div class="article-illustrationbox">
+                <img class="article-image" src="images/permasala.jpeg" alt="">
+            </div>
+
+            <div class="article-informationbox">
+                <h2>  Ideal para el Clima de Punta Cana</h2>
+                <p>
+                    La Perma Tradicional de Exterior es una solución confiable para proteger tus espacios del sol intenso y la lluvia ligera. Diseñada con materiales de alta durabilidad, esta pérgola fija proporciona sombra constante y confort térmico durante todo el año, ideal para terrazas, balcones y áreas exteriores.
+                </p>
+                <p class="p2">
+                    Gracias a su estructura sólida y su diseño funcional, la perma tradicional es perfecta para resistir las condiciones del clima tropical de Punta Cana. Su instalación fija asegura estabilidad ante vientos y humedad, mientras aporta estilo y funcionalidad a cualquier ambiente exterior.
+                </p>
+
+                <p class="p3">
+                    Esta pérgola de exterior se adapta perfectamente tanto a hogares como a negocios. Es una excelente opción para restaurantes, bares, hoteles y villas en Punta Cana que buscan ampliar sus áreas al aire libre sin comprometer la estética ni el confort de sus visitantes.
+                </p>
+            </div>
+        </div>
+
+
+        <div id="infobox2" class="article-container">
+
+            
+
+            <div  class="article-informationbox">
+                <h2>Una Solución Práctica y Decorativa</h2>
+                <p>
+                    Fabricada con materiales resistentes al sol, la humedad y la salinidad del ambiente caribeño, esta pérgola requiere muy poco mantenimiento. Es una inversión a largo plazo que mejora el valor y la usabilidad de tus espacios exteriores.
+                </p>
+                <p class="p2">
+                    Ya sea para proteger tus muebles de exterior, crear un área de descanso o habilitar un comedor al aire libre, la perma tradicional ofrece una cobertura eficaz contra los rayos UV. Mantén tus ambientes frescos y sombreados durante todo el día.
+                </p>
+
+                <p class="p3">
+                    Con la Perma Tradicional de Exterior, no solo mejoras la funcionalidad de tu hogar o negocio, sino que también elevas su atractivo visual. Es una alternativa ideal para quienes buscan sombra permanente con un diseño clásico y efectivo.
+                </p>
+            </div>
+
+            <div class="article-illustrationbox">
+                <img class="article-image" src="images/salafinal.jpeg" alt="">
+            </div>
+        </div>
+
+
+        
+
+        <div  class="steps">
+            <div class="step-container">
+                <div class="step-component"><img class="step-icon" src="images/whitewhatsapp.png" alt=""></div>
+                <div class="step-name">Contáctenos.</div>
+                <div class="step-component">Envienos su mensaje por whatsapp o via email y le asesoraremos</div>
+            </div>
+            <div class="step-container">
+                <div class="step-component"><img class="step-icon" src="images/measureicon.png" alt=""></div>
+                <div class="step-name" >Cotize con nosotros!</div>
+                <div class="step-component">Agende su cita para asesorarle con la medidas del area que desea cotizar.</div>
+            </div>
+            <div class="step-container">
+                <div class="step-component" ><img class="step-icon" src="images/gearicon.png" alt=""></div>
+                <div class="step-name">Fabricación</div>
+                <div class="step-component">Trabajamos su pedido en el menor tiempo posible. </div>
+            </div>
+            <div class="step-container">
+                <div class="step-component" ><img class="step-icon" src="images/screwswhite.png" alt=""></div>
+                <div class="step-name">Instalación</div>
+                <div class="step-component">Realizaremos su intalacion con profesionalismo cuidando cada detalle.</div>
+            </div>
+            
+            
+            
+           </div>
+
+           <div class="form-div">
+            <form  action="https://api.web3forms.com/submit" method="POST" class="form-container">
+                <div class="title">
+                    <h2 class="form-title">Contáctenos</h2>
+                </div>
+                
+                <input type="hidden" name="access_key" value="1a9c5ab8-605e-4cab-88f7-c20f3fcb0258">
+                <input type="text" name="name" placeholder="Tu Nombre" class="contact-inputs">
+                <input type="email" name="email" placeholder="Tu Correo" class="contact-inputs">
+                <textarea class="text-area-contact" name="message" placeholder="Tu Mensaje" class="contact-inputs"></textarea>
+                <button class="form-button" type="submit">Submit</button>
+            </form>
+        </div>
+        <footer>
+            <div class="footer-box"><a href="https://wa.me/18494991041"><img class="footericon" src="images/whatsappfooter.png" alt=""></a> <h3>(849) 499-1041</h3></div>
+            <div class="footer-box"><img class="footericon" src="images/mailfooter.png" alt=""> <h3>ventas@permasolrd.com</h3></div>
+            <div class="footer-box"><a href="https://www.instagram.com/permasol.rd"><img class="footericon" src="images/instagramfooter.png" alt=""></a><h3>@permasol.rd</h3></div>
+        </footer>
+    </body>
+</html>
