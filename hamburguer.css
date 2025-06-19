@@ -103,7 +103,7 @@ body {
 }
 .home-link{
     margin-bottom: 20px;
-    font-family: Savate;
+    font-family: Montserrat;
     
 }
 .home-link a{
@@ -124,5 +124,15 @@ body {
 }
 .product-link{
     margin-bottom: 10px;
-    font-family: Savate;
+    font-family: Montserrat;
+}
+
+.whatsapp-link a{
+text-decoration: none;
+color: white;
+font-family: Montserrat;
+                
+}
+.whatsapp-link{
+margin-top: 20px;
 }
